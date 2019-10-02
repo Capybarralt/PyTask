@@ -1,0 +1,2 @@
+# PyTask
+Practical tasks
