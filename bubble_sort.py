@@ -1,24 +1,16 @@
-def bubble_sort(lst, desc=False):
-    l = len(lst)
-    if desc == False:
-        max(lst, l)
+def bubble_sort(lst, desc = False):
+    if ( not desc ):
+        for i in range(len(lst)-1):
+            for j in range(len(lst)-i-1):
+                if lst[j] > lst[j+1]:
+                    lst[j], lst[j+1] = lst[j+1], lst[j];
     else:
-        min(lst, l)
-    return lst
+        for i in range(len(lst)-1):
+            for j in range(len(lst)-i-1):
+                if lst[j] < lst[j+1]:
+                    lst[j], lst[j+1] = lst[j+1], lst[j];
+    return lst;
 
-# Сортирует по возрастанию
-def max(lst, l):
-    for i in range(l - 1):
-        for j in range(l - i - 1):
-            if lst[j] > lst[j+1]:
-                lst[j], lst[j+1] = lst[j+1], lst[j]
-
-# Сортирует по убыванию
-def min(lst, l):
-    for i in range(l - 1):
-        for j in range(l - i - 1):
-            if lst[j] < lst[j+1]:
-                lst[j], lst[j+1] = lst[j+1], lst[j]
 
 """
 
