@@ -1,0 +1,3 @@
+[console_scripts]
+bookkeeping = task_bookkeeping:main
+
